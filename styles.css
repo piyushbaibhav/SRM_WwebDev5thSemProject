@@ -1,0 +1,324 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+*{
+    font-family: 'Roboto', sans-serif; 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;  /* Ensures a clean, modern font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+.hero-section {
+    background: url('images/hero-background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    z-index: 2;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content h1 {
+    font-size: 4rem;  /* Increased font size */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);  /* Adds depth to the text */
+    letter-spacing: 2px;  /* Spreads out the letters for a dramatic effect */
+    animation: slideInDown 1s ease-in-out;
+}
+
+.hero-content p {
+    font-size: 1.5rem;  /* Slightly larger font size */
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    letter-spacing: 1px;
+    animation: slideInUp 1s ease-in-out;
+}
+
+.btn {
+    background-color: #ffeb3b;
+    color: #333;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;  /* Slightly larger button text */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffc107;
+    transform: scale(1.05);
+}
+
+section {
+    padding: 60px 20px;  /* Slightly more padding for better spacing */
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section h2 {
+    font-size: 2.5rem;  /* Increased section header size */
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4CAF50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+section p, section ul {
+    font-size: 1.2rem;  /* Larger text size for better readability */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* styles.css */
+
+.service-card {
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;  /* Added padding for better spacing */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;  /* Added margin to separate the image from text */
+}
+
+.service-card h3 {
+    margin-top: 15px;
+    font-size: 2.2rem;  /* Increased font size for service titles */
+    color: #4CAF50;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.service-card p {
+    font-size: 1.3rem;  /* Increased font size for better readability */
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.service-card ul {
+    list-style-type: disc;  /* Used disc style for list items */
+    text-align: left;  /* Aligning list text to the left for better readability */
+    padding-left: 20px;  /* Added padding to indent the list */
+    font-size: 1.2rem;  /* Increased font size for list items */
+    color: #444;
+}
+
+.service-card ul li {
+    margin-bottom: 10px;
+}
+
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    margin-top: 20px;
+    border-top: 5px solid #333;
+}
+
+/* styles.css */
+
+/* Pricing Table Container */
+.pricing-table-container {
+    margin: 40px auto;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.pricing-table-container h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.pricing-table {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.pricing-card h4 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.pricing-card .price {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin: 10px 0;
+}
+
+.pricing-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.pricing-card ul li {
+    margin-bottom: 10px;
+}
+
+.pricing-card .btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.pricing-card .btn:hover {
+    background-color: #45a049;
+}
+
+/* Other styles remain the same */
+
+
+/* CSS Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
